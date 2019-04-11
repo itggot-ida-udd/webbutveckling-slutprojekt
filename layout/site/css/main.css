@@ -1,0 +1,16 @@
+.coverpic{
+    background: url(https://pbs.twimg.com/media/Bo1H_OuIYAA1RH0.jpg:large);
+    height: 750px;
+    width: 500px;
+    -webkit-user-select: none;
+}
+
+.wrapper{
+    background-color: blueviolet;
+    z-index: 100;
+}
+
+.cover{
+    z-index: 1000000000;
+    background-color:whitesmoke ;
+}
