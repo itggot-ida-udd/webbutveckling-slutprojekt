@@ -1,16 +1,81 @@
-.coverpic{
-    background: url(https://pbs.twimg.com/media/Bo1H_OuIYAA1RH0.jpg:large);
-    height: 750px;
-    width: 500px;
-    -webkit-user-select: none;
-}
+
 
 .wrapper{
     background-color: blueviolet;
-    z-index: 100;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: "coverpage";
 }
+
 
 .cover{
     z-index: 1000000000;
     background-color:whitesmoke ;
+    grid-area: coverpage;
+    
+    font-family: 'Cairo', sans-serif;
+
+}
+.coverpic{
+    background: url(https://pbs.twimg.com/media/Bo1H_OuIYAA1RH0.jpg:large);
+    
+    height:100%;
+    width:100%;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    color: whitesmoke;
+    font-size: 1em
+
+}
+h1{
+    margin:50px 10px 0 0 ;
+    color: whitesmoke;
+    font-size: 2em;
+}
+#color{
+    color:orange;
+}
+#under{
+    margin: 0;
+}
+
+.button{
+    background-color:red;
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    max-height: 75px;
+    max-width: 75px;
+    min-height: 75px;
+    min-width:75px;
+
+    margin: 150px 0 0 0;
+    
+}
+
+
+
+.site{
+    z-index: 100;
+    grid-area: coverpage;
+    font-family: 'Roboto', sans-serif;
 }
