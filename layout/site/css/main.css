@@ -40,8 +40,8 @@
 
 h3{
     color: whitesmoke;
-    font-size: 1em
-
+    font-size: 1em;
+    margin: 0; 
 }
 h1{
     margin:50px 10px 0 0 ;
@@ -61,6 +61,7 @@ h1{
 
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     border-radius: 50px;
     max-height: 75px;
