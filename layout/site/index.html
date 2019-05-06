@@ -7,6 +7,8 @@
     <title> wolfdare </title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo|Roboto:300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
 </head>
 <body> 
     <div class="wrapper"> 
@@ -26,7 +28,19 @@
     <div class="site">
     
         <!-- # index Z 100 -->
-        <div class="menu"></div>
+        <div class="hambuger_menu"> 
+            <i class="material-icons" id="hamburger-menu" style="font-size:50px"> menu</i>
+        </div>
+
+        <div class="menu">
+            <div class="icon-container">
+                <i class="material-icons" id="close" style="font-size:50px" >clear</i>
+            </div>
+            <div class="chat_matches">chat whit matches</div>
+            <div class="find_matches">find matches</div>
+        </div>  
+        <div class="menu_background"></div>
+        
         <div class="picture-gallery">
             <div class="picture" id="nr1"></div>
             <div class="picture" id="nr2"></div>
@@ -37,15 +51,20 @@
         <div class="Bar">
             <h5>info</h5>
             <div class="devider"></div>
-            <div class="next">next</div>
-            <div class="next-like">like</div>
+            <div class="next"><i class="material-icons">clear</i></div>
+            <div class="next-like"><i class="material-icons">pets</i></div>
         
         </div></div>
         
-        <article id=info>
+        <article id="info">
+            <div class="hover_con">
+                <h4 id="con">more info</h4>
+                <h5 id="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat reiciendis, autem beatae aut labore, at nesciunt officia non culpa commodi nihil laudantium minus unde hic ipsa dolor maiores. Cumque.</h5>
+            </div>
             <h3>About this girl</h3>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum quibusdam minima at voluptas quisquam repudiandae quaerat distinctio! Expedita cupiditate officia voluptate tempora sequi minima molestiae sapiente ab consequuntur voluptatum.</h5>
         </article>
+        
 
         <footer></footer>
 

@@ -11,7 +11,7 @@ body{
 
 
 .cover{
-    z-index: 1000000000;
+    z-index: 100000000000000000000;
     background-color:whitesmoke ;
     grid-area: coverpage;
     
@@ -84,10 +84,11 @@ article {
     font-family: 'Roboto', sans-serif;    
 
     grid-template-columns:100vw ;
-    grid-template-rows:30% 10% 45% 15% ;
+    grid-template-rows:30% auto 45% 15% ;
     grid-template-areas: "picture-gal" "Bar" "articel" "fotter";
 
 }
+
 .picture-gallery{
     display: flex;
     flex-direction: row;
@@ -106,7 +107,7 @@ article {
 
  display: flex;
  justify-content: center;
-
+ /* https://dog.ceo/dog-api/ */
 }
 #nr2{
     background: url(https://images.dog.ceo/breeds/husky/n02110185_10898.jpg) ; 
@@ -134,25 +135,33 @@ article {
 
 .Bar-container{
    grid-area: Bar;
-    height: 10%;
+    height: 9%;
    display:flex;
     justify-content: center;
+
+    
 }
 .Bar{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+
 
     background-color: rgb(172, 235, 162);
 
     border-radius:20px;
     width: 90%;
-    height: 90%;
+    height: 100%;
+
+    box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
 }
 .devider{
     background-color: rgb(225, 242, 118);
     width: 2.5%;
-    height: 1fr;
+    height: 100%;
 
     z-index: 300;
 }
@@ -160,20 +169,100 @@ article {
     border-radius: 50%;
     background-color: rgb(234, 155, 83);
     width:50px;
-    height:50px; 
+    height:50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .next-like{
     border-radius: 50%;
     background-color: rgb(234, 155, 83);
     width:50px;
     height:50px; 
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #info{
     grid-area: articel;
     height: 45%;
     background-color: rgb(172, 235, 162);
+    padding:2.5%;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
 }
+
+.hover_con{
+    height: 40%;
+    width: 95%;
+
+    background-color: rgb(225, 242, 118);
+    z-index: 400;
+    position: absolute;
+
+    box-shadow: 10px 10px 47px -6px rgba(0,0,0,0.75);
+
+}
+
+.menu{
+height:100% ;
+width: 70%;
+background-color:  rgb(246, 88, 88);
+z-index: 500;
+
+position:fixed;
+
+top: 0;
+right: 0;
+
+}
+.menu_background{
+   position:fixed;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+
+   background-color: rgba(255, 255, 255, 0.5); 
+   z-index:400;
+}
+.find_matches{
+    background-color:rgb(225, 242, 118);
+}
+.chat_matches{
+    background-color:rgb(172, 235, 162);
+}
+
+.hambuger_menu{
+    margin:1%;
+
+    height:7%;
+    width:15%;   
+
+    display: flex;
+    justify-content: center;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    border-radius: 50px;
+    background-color: rgb(172, 235, 162);
+
+    box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
+
+
+}
+
+
+
 footer{
     grid-area: fotter;
     background-color: rgb(246, 88, 88);
