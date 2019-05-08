@@ -9,16 +9,20 @@ $(".menu").hide();
 $("#close").click(function(){
     $(this).parents().find(".menu").hide(200);
     $(this).parents().find(".menu_background").hide();
+    $(this).parents().find(".hambuger_menu").slideDown(90)
   });
 
 $(".menu_background").click(function(){
     $(this).parents().find(".menu").hide(200);
     $(this).hide();
+    $(this).parents().find(".hambuger_menu").slideDown(90)
+
   });
 
 $("#hamburger-menu").click(function(){
    $(this).parents().find(".menu").show(200)
    $(this).parents().find(".menu_background").show()
+   $(this).parents().find(".hambuger_menu").slideUp(50)
   });  
 
 

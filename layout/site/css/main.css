@@ -150,7 +150,7 @@ article {
     box-sizing: border-box;
 
 
-    background-color: rgb(172, 235, 162);
+    background-color: #2BACD3;
 
     border-radius:20px;
     width: 90%;
@@ -189,12 +189,12 @@ article {
 #info{
     grid-area: articel;
     height: 45%;
-    background-color: rgb(172, 235, 162);
-    padding:2.5%;
-
+    background-color: rgba(43, 172, 211, 0.3);
+    width: 70%;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
-
+    border-radius: 5px; 
     box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
 }
 
@@ -243,11 +243,12 @@ right: 0;
 .hambuger_menu{
     margin:1%;
 
-    height:7%;
-    width:15%;   
+    height:7.5vh;
+    width:7.5vh;   
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
     position:absolute;
     top:0;
@@ -257,10 +258,19 @@ right: 0;
     background-color: rgb(172, 235, 162);
 
     box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
-
+}
+.wrapper-m{
+    grid-template-areas: "header header" "profile-pic chat-box";
+}
+header{
+    width:90%;
+    height: 15%;
+}
+.profile-pic{
+    border-radius: 50%;
+    background-color:rgb(234, 155, 83) ;
 
 }
-
 
 
 footer{
