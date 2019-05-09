@@ -47,17 +47,17 @@ h3{
 h1{
     margin:50px 10px 0 0 ;
     color: whitesmoke;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 #color{
-    color:rgb(234, 155, 83);
+    color:#ED6C21;
 }
 #under{
     margin: 0;
 }
 
 .button{
-    background-color:rgb(246, 88, 88);
+    background-color:#ED6C21;
     display:flex;
 
     justify-content: center;
@@ -73,9 +73,10 @@ h1{
     margin: 150px 0 0 0;
     
 }
-article {
-   margin: 25px; 
-}
+#cover-articel {
+   position: relative;
+   top: 30%; 
+} 
 
 
 .site{
@@ -84,7 +85,7 @@ article {
     font-family: 'Roboto', sans-serif;    
 
     grid-template-columns:100vw ;
-    grid-template-rows:30% auto 45% 15% ;
+    grid-template-rows:30% 8% 45% 17% ;
     grid-template-areas: "picture-gal" "Bar" "articel" "fotter";
 
 }
@@ -135,7 +136,7 @@ article {
 
 .Bar-container{
    grid-area: Bar;
-    height: 9%;
+    height: 8%;
    display:flex;
     justify-content: center;
 
@@ -144,43 +145,49 @@ article {
 .Bar{
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+
     align-items: center;
-    padding: 0 5%;
+    padding: 0 0.5%;
     box-sizing: border-box;
 
 
     background-color: #2BACD3;
 
-    border-radius:20px;
-    width: 90%;
+    border-radius:5px;
+    width: 70%;
     height: 100%;
 
     box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
 }
 .devider{
-    background-color: rgb(225, 242, 118);
-    width: 2.5%;
+    background-color: white;
+    width: 2.5px;
     height: 100%;
+
+    margin: 0 7.5% 0 10%;
 
     z-index: 300;
 }
 .next{
-    border-radius: 50%;
-    background-color: rgb(234, 155, 83);
-    width:50px;
-    height:50px;
+    border-radius:50px ;
+    background-color:white;
+
+    width:6vh ;
+    height:6vh ;
     
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .next-like{
-    border-radius: 50%;
-    background-color: rgb(234, 155, 83);
-    width:50px;
-    height:50px; 
+    border-radius:50px ;
+    background-color:white;
+    width:6vh ;
+    height:6vh ;
  
+    margin: 0 0 0 15% ;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,32 +195,39 @@ article {
 
 #info{
     grid-area: articel;
-    height: 45%;
+    height: 45%; 
+    width: 80%;
+
     background-color: rgba(43, 172, 211, 0.3);
-    width: 70%;
+   
     margin: 40px auto;
+
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    /* fix... */
+    align-items: center;
+    flex-direction: column;
+
     border-radius: 5px; 
-    box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
+
 }
 
 .hover_con{
-    height: 40%;
-    width: 95%;
+    height: 50vh;
+    width: 60vw;
 
-    background-color: rgb(225, 242, 118);
+    background-color:#2B97D3;
     z-index: 400;
     position: absolute;
 
-    box-shadow: 10px 10px 47px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 47px -6px rgba(0,0,0,0.3);
 
 }
 
 .menu{
 height:100% ;
 width: 70%;
-background-color:  rgb(246, 88, 88);
+background-color: white;
 z-index: 500;
 
 position:fixed;
@@ -233,13 +247,40 @@ right: 0;
    background-color: rgba(255, 255, 255, 0.5); 
    z-index:400;
 }
+.top-menu{
+    background-color: rgba(43, 172, 211, 0.39);
+    display: flex;
+    flex-direction: row;
+}
+.divider-menu{
+height: 0.5vh ;
+width: 100%;
+background-color: #BCBCBC;
+}
+#margin{
+    margin-top: 10%;
+}
 .find_matches{
-    background-color:rgb(225, 242, 118);
+    background-color:white;
+    /* rem text */
+    height:10%;
 }
 .chat_matches{
-    background-color:rgb(172, 235, 162);
+    background-color:white;
+    height: 10%;
 }
-
+#active{
+   font-size: 1,5rem;
+   color: #5EBEDD; 
+}
+#inactive{
+    font-size: 1,5rem;
+    color: #373737;
+}
+#menu-text{
+    color: white;
+    font-size: 2rem;
+}
 .hambuger_menu{
     margin:1%;
 
@@ -255,11 +296,11 @@ right: 0;
     left:0;
 
     border-radius: 50px;
-    background-color: rgb(172, 235, 162);
+    background-color: #2B97D3;
 
     box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
 }
-.wrapper-m{
+/* .wrapper-m{
     grid-template-areas: "header header" "profile-pic chat-box";
 }
 header{
@@ -268,14 +309,14 @@ header{
 }
 .profile-pic{
     border-radius: 50%;
-    background-color:rgb(234, 155, 83) ;
+    background-color:;
 
-}
+} */
 
 
 footer{
     grid-area: fotter;
-    background-color: rgb(246, 88, 88);
+    background-color:#ED6C21;
     height: 15%;
     width: 100%
 }
