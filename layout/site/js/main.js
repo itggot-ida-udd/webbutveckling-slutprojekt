@@ -35,4 +35,12 @@ $("#hamburger-menu").click(function(){
 
   });
 
+//   $(".next").click(function(){
+//     $(this).parents().child().find("#dog1").toggle(2)
+//     $(this).parents().child().find("#dog2").toggle(2)
+//     $(this).parents().child().find("#dog3").hide(2)
+//    });  
+// ".next-like"  kunna kilka på "next" och "next+like" och kunna bläddra mellan både bild och tillhörande text.
+//  om detta funkar blir det även mindre content i articeln och då kan den vara flera olika stolekar utan att innehållet hamnar utanför. tanken är att allt ser bra ut över 240 px * Xpx. 
+
 
