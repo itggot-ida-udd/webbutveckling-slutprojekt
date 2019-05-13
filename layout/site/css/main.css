@@ -42,7 +42,7 @@ body{
 h3{
     color: whitesmoke;
     font-size: 1em;
-    margin: 0; 
+    margin: 5% 10%; 
 }
 h1{
     margin:50px 10px 0 0 ;
@@ -111,22 +111,23 @@ h1{
  /* https://dog.ceo/dog-api/ */
 }
 #nr2{
-    background: url(https://images.dog.ceo/breeds/husky/n02110185_10898.jpg) ; 
+    background: url(../img/dog-1.jpg) ; 
     width: 100%;
 
     background-repeat: no-repeat;
     background-position: center;
 }
 #nr1{
-    background: url(https://images.dog.ceo/breeds/wolfhound-irish/n02090721_5373.jpg);
+    background: url(../img/dog-2-hotdog!.jpg);
     width: 50%;
+
     margin:2% 2% 2% 0 ;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 #nr3{
-    background: url(https://images.dog.ceo/breeds/entlebucher/n02108000_3007.jpg);
+    background: url(../img/dog-sad-carrot.jpg);
     width: 50%;
     margin:2% 0 2% 2% ;
     background-repeat: no-repeat;
@@ -212,6 +213,13 @@ h1{
     border-radius: 5px; 
 
 }
+h4{
+    margin: 0 10%;
+}
+h5{
+    margin: 0 10%;
+
+}
 
 .hover_con{
     height: 50vh;
@@ -226,6 +234,8 @@ h1{
 }
 
 .menu{
+font-family: 'Roboto', sans-serif; 
+
 height:100% ;
 width: 70%;
 background-color: white;
@@ -305,23 +315,88 @@ background-color: #BCBCBC;
 
     box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
 }
-/* .wrapper-m{
-    grid-template-areas: "header header" "profile-pic chat-box";
-}
-header{
-    width:90%;
-    height: 15%;
-}
-.profile-pic{
-    border-radius: 50%;
-    background-color:;
-
-} */
-
 
 footer{
     grid-area: fotter;
     background-color:#ED6C21;
     height: 15%;
     width: 100%
+}
+
+
+#site-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.site-container{
+    /* display: grid;
+    grid-template-areas: 
+    "header header" 
+    "info-top-cintainer info-top-cintainer" 
+    "profile-pic1 chat-box" 
+    "profile-pic2 chat-box" 
+    "profile-pic3 chat-box" 
+    "profile-pic4 chat-box" 
+    "profile-pic5 chat-box" 
+    "profile-pic6 chat-box"
+; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin: 20px 0;
+    grid-area: header;
+    width: 85%;
+    height: 10%;
+    background-color: #5EBEDD;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    border-radius: 5px;
+}
+.info-top-container{
+grid-area: info-top-cintainer;
+height: 15%;
+width: 82.5%;
+
+background-color: #ED6C21;
+
+}
+
+.profile-container {
+    display: flex;
+    width: 85vw;
+}
+
+.profile-pic{
+    grid-area: profile-pic1 , profile-pic2 , profile-pic3 , profile-pic4 , profile-pic5 , profile-pic6 ;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;    
+}
+.chat-boox{
+    grid-area: chat-box;
+    background-color: aquamarine;
+    width: auto;
+}
+
+.menu-ham-site-two{
+    margin:1%;
+
+    height:7.5vh;
+    width:7.5vh;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+
+    border-radius: 50px;
+    background-color: #2B97D3;
+
 }
