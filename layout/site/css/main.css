@@ -77,7 +77,7 @@ h1{
    position: relative;
    top: 20%; 
 } 
-
+/* cover code end */
 
 .site{
     z-index: 100;
@@ -233,6 +233,13 @@ h5{
 
 }
 
+footer{
+    grid-area: fotter;
+    background-color:#ED6C21;
+    height: 15%;
+    width: 100%
+}
+/* hambugemeny och dess inehåll */
 .menu{
 font-family: 'Roboto', sans-serif; 
 
@@ -315,15 +322,48 @@ background-color: #BCBCBC;
 
     box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
 }
+/* menu inehåll end */
+/* desktop */
 
-footer{
-    grid-area: fotter;
-    background-color:#ED6C21;
-    height: 15%;
-    width: 100%
+@media screen and (min-device-width: 640px) {
+
+.wrapper {
+    
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "site";
+    grid-template-columns: 100vw;
+    grid-template-rows: 30% 70%;
+}
+.cover{
+   grid-area: header; 
+}    
+.coverpic{
+    background: url(../img/coverheader.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+    flex-direction: row;
+    justify-content: center; 
 }
 
+.cover h1 {
+margin: 0 7.5px;
+}
 
+.button{
+display: none;
+}
+.site{
+    grid-area: site;
+}
+
+}
+
+/* site2 är tanken att det ska gå att utnyttaj viss css från site 1  */
 #site-two{
     display: flex;
     flex-direction: column;
