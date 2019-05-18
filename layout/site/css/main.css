@@ -1,376 +1,440 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 100vh;
-    grid-template-areas: "coverpage";
+.wrapper {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+  grid-template-areas: "coverpage";
 }
 
+.cover {
+  z-index: 100000000000000000000;
+  background-color: whitesmoke;
+  grid-area: coverpage;
 
-.cover{
-    z-index: 100000000000000000000;
-    background-color:whitesmoke ;
-    grid-area: coverpage;
-    
-    font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
+}
+.coverpic {
+  background: url(https://pbs.twimg.com/media/Bo1H_OuIYAA1RH0.jpg:large);
 
-}
-.coverpic{
-    background: url(https://pbs.twimg.com/media/Bo1H_OuIYAA1RH0.jpg:large);
-    
-    height:100%;
-    width:100%;
-   
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.container{
-    display: flex;
-    flex-direction: row;
-}
+  height: 100%;
+  width: 100%;
 
-h3{
-    color: whitesmoke;
-    font-size: 1em;
-    margin: 5% 10%; 
+  position: fixed;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-h1{
-    margin:50px 10px 0 0 ;
-    color: whitesmoke;
-    font-size: 1.5em;
-}
-#color{
-    color:#ED6C21;
-}
-#under{
-    margin: 0;
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
-.button{
-    background-color:#ED6C21;
-    display:flex;
+h3 {
+  color: whitesmoke;
+  font-size: 1em;
+  margin: 5% 10%;
+}
+h1 {
+  margin: 50px 10px 0 0;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+#color {
+  color: #ed6c21;
+}
+#under {
+  margin: 0;
+}
 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.button {
+  background-color: #ed6c21;
+  display: flex;
 
-    border-radius: 50px;
-    max-height: 75px;
-    max-width: 75px;
-    min-height: 75px;
-    min-width:75px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    margin: 150px 0 0 0;
-    
+  border-radius: 50px;
+  max-height: 75px;
+  max-width: 75px;
+  min-height: 75px;
+  min-width: 75px;
+
+  margin: 150px 0 0 0;
 }
 #cover-articel {
-   position: relative;
-   top: 20%; 
-} 
+  position: relative;
+  top: 20%;
+}
 /* cover code end */
 
-.site{
-    z-index: 100;
-    grid-area: coverpage;
-    font-family: 'Roboto', sans-serif;    
+.site {
+  z-index: 100;
+  grid-area: coverpage;
+  font-family: "Roboto", sans-serif;
 
-    grid-template-columns:100vw ;
-    grid-template-rows:30% 8% 45% 17% ;
-    grid-template-areas: "picture-gal" "Bar" "articel" "fotter";
-
+  grid-template-columns: 100vw;
+  grid-template-rows: 30% 8% 45% 17%;
+  grid-template-areas: "picture-gal" "Bar" "articel" "fotter";
 }
 
-.picture-gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+.picture-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 
-    width:100%;
-    height:30%;
-    margin: 5% 0 5% 0;
+  width: 100%;
+  height: 30%;
+  margin: 5% 0 5% 0;
 
-    grid-area: picture-gal;
+  grid-area: picture-gal;
 }
-.picture{
- height: 90%;
- margin: 2%;
+.picture {
+  height: 90%;
+  margin: 0 1%;
 
- display: flex;
- justify-content: center;
- /* https://dog.ceo/dog-api/ */
+  display: flex;
+  justify-content: center;
 }
-#nr2{
-    background: url(../img/dog-1.jpg) ; 
-    width: 100%;
-
-    background-repeat: no-repeat;
-    background-position: center;
+.div2 {
+  width: 100%;
 }
-#nr1{
-    background: url(../img/dog-2-hotdog!.jpg);
-    width: 50%;
-
-    margin:2% 2% 2% 0 ;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.div1 {
+  width: 50%;
+  margin-left: 0;
 }
-#nr3{
-    background: url(../img/dog-sad-carrot.jpg);
-    width: 50%;
-    margin:2% 0 2% 2% ;
-    background-repeat: no-repeat;
-    background-position: center;
+.div3 {
+  width: 50%;
 
+  margin-right: 0;
 }
+#nr2 {
+  background: url(../img/dog-1-433x296.jpg);
 
-.Bar-container{
-   grid-area: Bar;
-    height: 8%;
-   display:flex;
-    justify-content: center;
-
-    
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.Bar{
-    display: flex; 
-    flex-direction: row;
+#nr1 {
+  background: url(../img/dog-2-hotdog-433x296.jpg);
 
-    align-items: center;
-    padding: 0 0.5%;
-    box-sizing: border-box;
-    justify-content: space-around;
-
-
-    background-color: #2BACD3;
-
-    border-radius:5px;
-    width: 70%;
-    height: 100%;
-
-    box-shadow: 6px 17px 26px -16px rgba(0,0,0,0.75);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.devider{
-    background-color: white;
-    width: 2.5px;
-    height: 100%;
+#nr3 {
+  background: url(../img/dog-sad-carrot-433x296.jpg);
 
-    margin: 0 7.5% 0 10%;
-
-    z-index: 300;
-}
-.next{
-    border-radius:50px ;
-    background-color:white;
-
-    width:6vh ;
-    height:6vh ;
-    
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.next-like{
-    border-radius:50px ;
-    background-color:white;
-    width:6vh ;
-    height:6vh ;
- 
-    margin: 0 0 0 15% ;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#info{
-    grid-area: articel;
-    height: 45%; 
-    width: 80%;
-
-    background-color: rgba(43, 172, 211, 0.3);
-   
-    margin: 40px auto;
-
-    display: flex;
-    justify-content: center; 
-    /* fix... */
-    align-items: center;
-    flex-direction: column;
-
-    border-radius: 5px; 
-
+.Bar-container {
+  grid-area: Bar;
+  height: 8%;
+  display: flex;
+  justify-content: center;
 }
-h4{
-    margin: 0 10%;
+.Bar {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 0 0.5%;
+  box-sizing: border-box;
+  justify-content: space-around;
+
+  background-color: #2bacd3;
+
+  border-radius: 5px;
+  width: 70%;
+  height: 100%;
+
+  box-shadow: 6px 17px 26px -16px rgba(0, 0, 0, 0.75);
 }
-h5{
-    margin: 0 10%;
+.devider {
+  background-color: white;
+  width: 2.5px;
+  height: 100%;
 
+  margin: 0 7.5% 0 10%;
+
+  z-index: 300;
+}
+.next {
+  border-radius: 50px;
+  background-color: white;
+
+  width: 6vh;
+  height: 6vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next-like {
+  border-radius: 50px;
+  background-color: white;
+  width: 6vh;
+  height: 6vh;
+
+  margin: 0 0 0 15%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hover_con{
-    height: 50vh;
-    width: 60vw;
+#info {
+  grid-area: articel;
+  height: 45%;
+  width: 80%;
 
-    background-color:#2B97D3;
-    z-index: 400;
-    position: absolute;
+  background-color: rgba(43, 172, 211, 0.3);
 
-    box-shadow: 10px 10px 47px -6px rgba(0,0,0,0.3);
+  margin: 40px auto;
 
+  display: flex;
+  justify-content: center;
+  /* fix... */
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 5px;
+}
+h4 {
+  margin: 0 10%;
+}
+h5 {
+  margin: 0 10%;
 }
 
-footer{
-    grid-area: fotter;
-    background-color:#ED6C21;
-    height: 15%;
-    width: 100%
+.hover_con {
+  height: 50vh;
+  width: 60vw;
+
+  background-color: #2b97d3;
+  z-index: 400;
+  position: absolute;
+
+  box-shadow: 10px 10px 47px -6px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  grid-area: fotter;
+  background-color: #ed6c21;
+  height: 15%;
+  width: 100%;
 }
 /* hambugemeny och dess inehåll */
-.menu{
-font-family: 'Roboto', sans-serif; 
+.menu {
+  font-family: "Roboto", sans-serif;
 
-height:100% ;
-width: 70%;
-background-color: white;
-z-index: 500;
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  z-index: 500;
 
-position:fixed;
+  position: fixed;
 
-top: 0;
-right: 0;
-
+  top: 0;
+  right: 0;
 }
-.menu_background{
-   position:fixed;
-   top: 0;
-   left: 0;
+.menu_background {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
 
-   background-color: rgba(255, 255, 255, 0.5); 
-   z-index:400;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 400;
 }
-.top-menu{
-    background-color: #2BACD3;
-    display: flex;
-    flex-direction: row;
+.top-menu {
+  background-color: #2bacd3;
+  display: flex;
+  flex-direction: row;
 }
-.divider-menu{
-height: 0.5vh ;
-width: 100%;
-background-color: #BCBCBC;
+.divider-menu {
+  height: 0.5vh;
+  width: 100%;
+  background-color: #bcbcbc;
 }
-#margin{
-    margin-top: 10%;
+#margin {
+  margin-top: 10%;
 }
-.find_matches{
-    background-color:white;
-    /* rem text */
-    height:10%;
+.find_matches {
+  background-color: white;
+  /* rem text */
+  height: 10%;
 }
-.chat_matches{
-    background-color:white;
-    height: 10%;
+.chat_matches {
+  background-color: white;
+  height: 10%;
 }
-#active{
-   font-size: 1,5rem;
-   color: #5EBEDD; 
-   margin: 10px;
+#active {
+  font-size: 1, 5rem;
+  color: #5ebedd;
+  margin: 10px;
+}
+#inactive {
+  font-size: 1, 5rem;
+  color: #373737;
+  margin: 10px;
+}
+#menu-text {
+  color: white;
+  font-size: 2rem;
+  margin: 5px;
+}
+.hambuger_menu {
+  margin: 1%;
 
-}
-#inactive{
-    font-size: 1,5rem;
-    color: #373737;
-    margin: 10px;
-}
-#menu-text{
-    color: white;
-    font-size: 2rem;
-    margin: 5px;
-}
-.hambuger_menu{
-    margin:1%;
+  height: 7.5vh;
+  width: 7.5vh;
 
-    height:7.5vh;
-    width:7.5vh;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    position:absolute;
-    top:0;
-    left:0;
+  border-radius: 50px;
+  background-color: #2b97d3;
 
-    border-radius: 50px;
-    background-color: #2B97D3;
-
-    box-shadow: -2px -1px 36px 0px rgba(0,0,0,0.33);
+  box-shadow: -2px -1px 36px 0px rgba(0, 0, 0, 0.33);
 }
 /* menu inehåll end */
 /* desktop */
 
 @media screen and (min-device-width: 640px) {
-
-.wrapper {
-    
+  .wrapper {
     display: grid;
-    grid-template-areas: 
-    "header" 
-    "site";
+    grid-template-areas:
+      "header-desk"
+      "site-desk";
     grid-template-columns: 100vw;
-    grid-template-rows: 30% 70%;
-}
-.cover{
-   grid-area: header; 
-}    
-.coverpic{
+    grid-template-rows: 50% 100%;
+  }
+
+  .menu {
+    width: 30%;
+  }
+  .cover {
+    position: static;
+    z-index: 1;
+    grid-area: header-desk;
+  }
+  .coverpic {
     background: url(../img/coverheader.jpg);
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
+
+    position: static;
 
     flex-direction: row;
-    justify-content: center; 
-}
+    justify-content: center;
+  }
 
-.cover h1 {
-margin: 0 7.5px;
-}
+  .cover h1 {
+    margin: 0 7.5px;
+  }
 
-.button{
-display: none;
-}
-.site{
-    grid-area: site;
-}
+  .button {
+    display: none;
+  }
+  .site {
+    grid-area: site-desk;
+    margin-top: 2.5%;
+  }
 
+  .picture-gallery {
+    height: 80%;
+    margin: 1% 0;
+  }
+  .picture {
+    height: 100%;
+  }
+  #nr2 {
+    width: 70%;
+    background: url(../img/dog-1-865x592.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #nr1 {
+    background: url(../img/dog-2-hotdog-865x592.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  #nr3 {
+    background: url(../img/dog-sad-carrot-865x592.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .Bar {
+    width: 100vw;
+    height: 50%;
+    margin: 1vw 0;
+
+    justify-content: center;
+  }
+  .devider {
+    display: none;
+  }
+  .next {
+    background-color: #e7e7e7;
+  }
+  .next-like {
+    background-color: #e7e7e7;
+  }
+  #info {
+    width: 50%;
+    align-items: flex-start;
+  }
+  h3 {
+    margin: 2% 10%;
+  }
+  .hover_con {
+    width: 45vw;
+    height: 15vh;
+    border-radius: 2.5px;
+    margin: -10px;
+  }
+  footer {
+    position: static;
+    bottom: 0;
+    height: 20%;
+  }
 }
 
 /* site2 är tanken att det ska gå att utnyttaj viss css från site 1  */
-#site-two{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#site-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.site-container{
-    /* display: grid;
+.site-container {
+  /* display: grid;
     grid-template-areas: 
     "header header" 
     "info-top-cintainer info-top-cintainer" 
@@ -381,62 +445,61 @@ display: none;
     "profile-pic5 chat-box" 
     "profile-pic6 chat-box"
 ; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-header{
-    margin: 20px 0;
-    grid-area: header;
-    width: 85%;
-    height: 10%;
-    background-color: #5EBEDD;
+header {
+  margin: 20px 0;
+  grid-area: header;
+  width: 85%;
+  height: 10%;
+  background-color: #5ebedd;
 
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
-.info-top-container{
-grid-area: info-top-cintainer;
-height: 15%;
-width: 82.5%;
+.info-top-container {
+  grid-area: info-top-cintainer;
+  height: 15%;
+  width: 82.5%;
 
-background-color: #ED6C21;
-
+  background-color: #ed6c21;
 }
 
 .profile-container {
-    display: flex;
-    width: 85vw;
+  display: flex;
+  width: 85vw;
 }
 
-.profile-pic{
-    grid-area: profile-pic1 , profile-pic2 , profile-pic3 , profile-pic4 , profile-pic5 , profile-pic6 ;
-    background-color: grey;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;    
+.profile-pic {
+  grid-area: profile-pic1, profile-pic2, profile-pic3, profile-pic4,
+    profile-pic5, profile-pic6;
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
-.chat-boox{
-    grid-area: chat-box;
-    background-color: aquamarine;
-    width: auto;
+.chat-boox {
+  grid-area: chat-box;
+  background-color: aquamarine;
+  width: auto;
 }
 
-.menu-ham-site-two{
-    margin:1%;
+.menu-ham-site-two {
+  margin: 1%;
 
-    height:7.5vh;
-    width:7.5vh;   
+  height: 7.5vh;
+  width: 7.5vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: static;
+  position: static;
 
-    border-radius: 50px;
-    background-color: #2B97D3;
-
+  border-radius: 50px;
+  background-color: #2b97d3;
 }
