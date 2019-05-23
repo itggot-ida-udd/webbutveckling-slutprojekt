@@ -91,6 +91,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
 
   width: 100%;
@@ -176,8 +177,8 @@ h1 {
   border-radius: 50px;
   background-color: white;
 
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 
   display: flex;
   align-items: center;
@@ -309,6 +310,21 @@ footer {
 
   box-shadow: -2px -1px 36px 0px rgba(0, 0, 0, 0.33);
 }
+/* fixes for samler diveses mobile. */
+@media screen and (max-device-width: 430px){
+.Bar{
+  justify-content: center;
+  width: 80%;
+}
+.devider{
+  display: none;
+}
+.next-button{
+  height:30px ;
+  width:30px ;
+}
+
+}
 /* menu inehåll end */
 /* desktop */
 
@@ -384,17 +400,14 @@ footer {
 
   .Bar {
     width: 100vw;
-    margin: 1vw 0;
+    margin: 2.5vw 0;
     height: 15px;
     justify-content: center;
   }
   .devider {
     display: none;
   }
-  .next {
-    background-color: #e7e7e7;
-  }
-  .next-like {
+  .next-button {
     background-color: #e7e7e7;
   }
   #info {
@@ -405,16 +418,29 @@ footer {
     margin: 2% 10%;
   }
   .hover_con {
-    width: 45vw;
+    width: 20vw;
     height: 15vh;
     border-radius: 2.5px;
     margin: -10px;
+
+    
   }
   footer {
     position: static;
     bottom: 0;
     height: 20%;
   }
+}
+/* picture size for bigger devices for desktop */
+@media screen and (min-device-width: 1000px){
+.picture{
+  height: 50vh ;
+
+}
+.picture-gallery{
+  height: 55vh;
+}
+
 }
 
 /* site2 är tanken att det ska gå att utnyttaj viss css från site 1  */

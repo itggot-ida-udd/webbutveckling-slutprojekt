@@ -82,7 +82,6 @@ $(".next-like").click(function () {
 
 
 
-// ".next-like"  kunna kilka på "next" och "next+like" och kunna bläddra mellan både bild och tillhörande text.
 //   tanken är att allt ser bra ut över 240 px * Xpx. upp till 640px * Xpx för mobile. 
 
 
