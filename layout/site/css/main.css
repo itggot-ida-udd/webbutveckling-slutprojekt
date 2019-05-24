@@ -335,7 +335,7 @@ footer {
       "header-desk"
       "site-desk";
     grid-template-columns: 100vw;
-    grid-template-rows: 50% 100%;
+    grid-template-rows: 40vh 100vh;
   }
 
   .menu {
@@ -408,7 +408,7 @@ footer {
     display: none;
   }
   .next-button {
-    background-color: #e7e7e7;
+    background-color: #d4e5f8;
   }
   #info {
     width: 50%;
@@ -418,10 +418,14 @@ footer {
     margin: 2% 10%;
   }
   .hover_con {
-    width: 20vw;
-    height: 15vh;
+    width: 60vw;
+    height: 10vh;
     border-radius: 2.5px;
-    margin: -10px;
+    margin: -3.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 
     
   }
