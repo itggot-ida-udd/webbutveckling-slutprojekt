@@ -4,31 +4,31 @@ $(".button").click(function(){
 });
 
 $(".menu_background").hide();
-$(".menu").hide();
+$(".menu_container ").hide();
 
 $("#close").click(function(){
-  $(this).parents().find(".menu").hide(200);
+  $(this).parents().find(".menu_container").hide(200);
   $(this).parents().find(".menu_background").hide();
-  $(this).parents().find(".hambuger_menu").slideDown(90);
+  $(this).parents().find(".menu_button").slideDown(90);
 });
 
 $(".menu_background").click(function(){
-  $(this).parents().find(".menu").hide(200);
+  $(this).parents().find(".menu_container").hide(200);
   $(this).hide();
-  $(this).parents().find(".hambuger_menu").slideDown(90);
+  $(this).parents().find(".menu_button").slideDown(90);
 
 });
 
 $("#hamburger-menu").click(function(){
-  $(this).parents().find(".menu").show(200);
+  $(this).parents().find(".menu_container").show(200);
   $(this).parents().find(".menu_background").show();
-  $(this).parents().find(".hambuger_menu").slideUp(50);
+  $(this).parents().find(".menu_button").slideUp(50);
 });  
 
 
 $(".hover_con").hide();
 
-$("#info").hover(function(){
+$(".info").hover(function(){
   $(this).find(".hover_con").show();
 },function(){
   $(this).find(".hover_con").hide();
@@ -50,13 +50,12 @@ let transelation = ["woff! woooof! woff woff woff! *bark* woof woooof!"
 
 $(".next-like").click(function () {
 
-  $('#description').each(function(){
-    console.log("hejinsdnic")
+  $('.description').each(function(){
     descriptionIndex = (descriptionIndex + 1) % description.length
     $(this).text(description[descriptionIndex])
   });
 
-  $('#transelation').each(function(){
+  $('.transelation').each(function(){
     transelationIndex = (transelationIndex + 1) % transelation.length
     $(this).text(transelation[transelationIndex])
   });  
