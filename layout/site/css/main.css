@@ -43,6 +43,9 @@ body {
 .white_agenst_white_color{
   background-color: #d4e5f8;
 }
+button{
+  border: 0;
+}
 
 .cover {
   z-index: 100000000000000000000;
@@ -207,10 +210,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .next-like {
   margin: 0 0 0 15%;
-  cursor: pointer;
 }
 
 .info {
@@ -253,6 +256,9 @@ footer {
   height: 15%;
   width: 100%;
 }
+.footer_information{
+  display: none;
+}
 /* hambugemeny och dess inehåll */
 .menu_container {
   font-family: "Roboto", sans-serif;
@@ -265,6 +271,9 @@ footer {
 
   top: 0;
   right: 0;
+}
+.menu_container hr{
+  border: 0;
 }
 .menu_background {
   position: fixed;
@@ -280,6 +289,9 @@ footer {
 .menu_header {
   display: flex;
   flex-direction: row;
+}
+.icon-container{
+  background: transparent;
 }
 .divider-menu {
   height: 0.5vh;
@@ -376,8 +388,8 @@ h1{
     grid-template-rows: 40vh 100vh;
   }
 
-  .menu {
-    width: 30%;
+  .menu_container {
+    width: 30vw;
   }
   .cover {
     position: static;
@@ -460,25 +472,57 @@ h1{
     width: 60vw;
     height: 12.5vh;
     border-radius: 2.5px;
-    margin: -3.5vw;
+    margin: -1vw -3.5vw;
 
     display: flex;
     align-items: center;
     justify-content: center; 
 
-    
+  }
+  .hover_con h5{
+    font-size: 0.70em;
   }
   footer {
     position: static;
     bottom: 0;
     height: 20%;
+
+    display: flex;
+    align-items: center;
   }
+  .footer_information{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  .alert_box{
+    border-radius: 2.5px; 
+  }
+  .alert_box h6{
+    margin: 0
+  }
+  .alert_button{
+    margin: 0 3vw;
+    border-radius: 50%;
+    height: 3.5vw ;
+    width: 3.5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alert_button:hover{
+    box-shadow: -2px -1px 36px 0px rgba(0, 0, 0, 0.33);
+  }
+  .notification{
+    margin-right: 20px;
+  }
+
 }
-/* picture size for bigger devices for desktop */
-@media screen and (min-device-width: 1000px){
+/* sizeing for bigger devices for desktop */
+@media screen and (min-device-width: 1060px){
 .picture{
   height: 50vh ;
-
 }
 .picture-gallery{
   height: 55vh;
@@ -487,8 +531,9 @@ h1{
   font-size: 3em;
 }
 .info h5,h3,h4{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
+
 }
 
 /* site2 är tanken att det ska gå att utnyttaj viss css från site 1  men site 2 existerar inte i detta nu. */

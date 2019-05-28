@@ -35,6 +35,16 @@ $(".info").hover(function(){
 
 });
 
+$(".alert_box").hide();
+
+$(".alert_button").hover(function(){
+  $(this).parents().find(".alert_box").show();
+},function(){
+  $(this).parents().find(".alert_box").hide();
+
+});
+
+
 let descriptionIndex = 0;
 let description = ["Happy and good gril. Protective of master. Loves when master talkes me out bikeing, runing fast is the best. favorite food: crakers. Wants someone else to run with who is happy and energetic."
 ,"Sad and lonely but calm. Master not home offen misses company.enjoys when master is home, watching tv beside master is cosy. favorite food: carrot."
