@@ -46,6 +46,9 @@ body {
 button{
   border: 0;
 }
+button:hover{
+    box-shadow: -2px -1px 36px 0px rgba(0, 0, 0, 0.33);
+  }
 
 .cover {
   z-index: 100000000000000000000;
@@ -490,8 +493,9 @@ h1{
   }
   .footer_information{
     display: flex; 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100vw;
   }
   .alert_box{
     border-radius: 2.5px; 
@@ -508,9 +512,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .alert_button:hover{
-    box-shadow: -2px -1px 36px 0px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
   }
   .notification{
     margin-right: 20px;
